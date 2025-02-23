@@ -19,10 +19,10 @@ h2{
 }
 form{
    width: 400px;
+   height: fit-content;
     border: 3px solid black;
     padding: 20px;
-    border-radius: 7px;;
-    margin-top: 30px;
+    border-radius: 7px;
     box-shadow:10px 20px 20px black ;
 }
 input{
@@ -36,8 +36,14 @@ label{
     color: rebeccapurple;
     font-weight: 600;
 }
-#name, #amount, #date{
+#name, #amount, #date, #type, #category{
     width: 90%;
+}
+#type, #category{
+    padding: 7px;
+    text-align: center;
+    border-radius: 7px;
+    margin: 5px 0;
 }
 .submit-btn{
     width: 90%;
@@ -58,6 +64,8 @@ label{
     flex-wrap: wrap;
 }
 .each_items{
+    width: 200px;
+    height: 150px;
     width: fit-content;
     border: 2px solid rebeccapurple;
     padding: 20px;
