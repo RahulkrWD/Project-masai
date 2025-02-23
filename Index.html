@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Finance Dashboard</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body onload="DisplayData()">
+        <div class="container">
+            <h2 class="title"><u>Personal Finance Dashboard</u></h2>
+            <div class="form-container">
+
+                <form onsubmit="Submit()">
+                    <label for="name">Name </label>
+                    <br>
+                    <input type="text" id="name" placeholder="Enter Name.."
+                        required>
+                    <br>
+
+                    <label for="amount">Amount</label>
+                    <br>
+                    <input type="text" id="amount" placeholder="Enter Amount.."
+                        required>
+                    <br>
+                    <label for="type">Type </label>
+                    <br>
+                    <select id="type" required>
+                        <option value="income">Income</option>
+                        <option value="expense">Expense</option>
+                    </select>
+                    <br>
+                    <label for="date">Date </label>
+                    <input id="date" type="date" required>
+                    <br>
+                    <label for="category">Category </label>
+                    <select id="category" required>
+                        <option value="Travel">Travel</option>
+                        <option value="Food">Food</option>
+                        <option value="Movie">Movie</option>
+                    </select>
+                    <br>
+                    <button class="submit-btn">Add
+                        Transaction</button>
+                </form>
+            </div>
+            <div class="display-container">
+                <h2><u> Transaction List Section </u></h2>
+
+                <div id="list_items">
+
+                </div>
+
+            </div>
+        </div>
+    </body>
+    <script src="./script.js"></script>
+
+</html>
